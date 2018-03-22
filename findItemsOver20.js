@@ -1,17 +1,13 @@
-function findItemsOver20(){
+function findItemsOver20(ItemsOver20){
+ console.log(ItemsOver20);
+var itemList =[];
 
-  var itemList = [
-      {name : 'apples', qty : 10},
-      {name : 'pears', qty : 37},
-      {name : 'bananas', qty : 27},
-      {name : 'apples', qty : 3},
-  ];
+  for (var i=0; i<ItemsOver20.length; i++){
+    var results= ItemsOver20[i];
+ 	if (results.qty > 20){
+    itemList.push(results);
 
-  var results = findItemsOver(itemList, 25)
-  //results look like this now.
-  var results = [
-      {name : 'pears', qty : 37},
-      {name : 'bananas', qty : 27},
-  ];
-return ItemListOver20;
-}
+  }
+  }
+  return itemList;
+};
