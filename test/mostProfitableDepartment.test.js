@@ -31,7 +31,7 @@ var myvar2= [
   assert.deepEqual(mostProfitableDepartment (myvar),'outdoor');
   });
 
-  it('return mostProfitableDepartment', function(){
+  it(' should return mostProfitableDepartment function', function(){
     assert.deepEqual(mostProfitableDepartment (myvar2),'hardware')
   });
 });
