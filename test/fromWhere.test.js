@@ -1,9 +1,9 @@
 describe ('fromWhere', function(){
-  it('should count the transportFee', function(){
+  it('should return the town for fromWhere function', function(){
   assert.equal(fromWhere('CA'),'Cape Town');
   });
 
-  it('check type', function(){
-    assert.typeOf(fromWhere('morning' ), 'string');
+  it('check type for fromWhere function', function(){
+    assert.typeOf(fromWhere('CY' ), 'Bellville');
   });
 });
