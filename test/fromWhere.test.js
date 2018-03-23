@@ -4,6 +4,6 @@ describe ('fromWhere', function(){
   });
 
   it('check town for fromWhere function', function(){
-    assert.equal(fromWhere('CJ' ),'Paarl');
+    assert.typeOf(fromWhere('CJ' ),'Paarl');
   });
 });
