@@ -1,8 +1,8 @@
 describe(' isWeekday', function(){
-    it('find out if it is a weekday', function(){
+    it('find out if it is a weekday for isWeekday function', function(){
       assert.equal(isWeekday('Monday'), true);
     });
-    it('find out if it is a weekday', function(){
+    it('check out if it is a weekday for isWeekday function', function(){
       assert.equal(isWeekday('Saturday'), false);
 
     });
