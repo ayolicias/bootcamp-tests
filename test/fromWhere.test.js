@@ -4,6 +4,6 @@ describe ('fromWhere', function(){
   });
 
   it('check type for fromWhere function', function(){
-    assert.typeOf(fromWhere('CY' ), 'Bellville');
+    assert.typeOf(fromWhere('CY' ), 'bellville');
   });
 });
