@@ -1,12 +1,22 @@
 describe ('findItemsOver20', function(){
-  it('should count the itemListOver20', function(){
-  assert.deepEqual(findItemsOver20([{name : 'apples', qty : 10},
+
+  var items=[{name : 'apples', qty : 10},
     {name : 'bananas', qty : 27},
-    {name : 'apples', qty : 3}]), [{'name' : 'bananas', 'qty' : 27}])
+    {name : 'apples', qty : 3}];
+
+    var result=[{'name' : 'bananas', 'qty' : 27}];
+
+  it('should count the itemListOver20', function(){
+  assert.deepEqual(findItemsOver20(items), result);
 });
-it('should count items less than20', function(){
-assert.deepEqual(findItemsOver20([{name : 'apples', qty : 37},
+
+var items2=[{name : 'apples', qty : 37},
   {name : 'bananas', qty : 10},
-  {name : 'pears', qty : 12}]), [{'name' : 'apples', 'qty' : 37}])
+  {name : 'pears', qty : 12}];
+
+  var result2= [{'name' : 'apples', 'qty' : 37}];
+
+it('should count items less than20', function(){
+assert.deepEqual(findItemsOver20(items2),result2);
 });
 });
