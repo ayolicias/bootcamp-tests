@@ -3,7 +3,7 @@ describe ('fromWhere', function(){
   assert.equal(fromWhere('CA'),'Cape Town');
   });
 
-  it('check town for fromWhere function', function(){
+  it('check type for fromWhere function', function(){
     assert.typeOf(fromWhere('CJ' ),'Paarl');
   });
 });
